@@ -27,7 +27,7 @@ function crb_attach_theme_options() {
     Field::make( 'footer_scripts', 'crb_footer_scripts', 'Скрипты в футере' )
   ))->add_tab( __('Загальні'), array(
     Field::make( 'text', 'crb_footer_links_numbers', 'Кількість посилань' ),
-    Field::make( 'association', 'crb_top_posts' . crb_get_i18n_suffix(), 'Топ посилання')
+    Field::make( 'association', 'crb_top_posts' , 'Топ посилання')
       ->set_types( array(
         array(
           'type'      => 'post',
