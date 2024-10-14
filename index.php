@@ -9,47 +9,28 @@
               <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
             </svg>  
           </div>
-          <input type="text" value="<?php echo get_search_query() ?>" name="s" id="s" class="w-full bg-custom-darkblue border-2 border-custom-lightwhite text-custom-lightwhite rounded-full px-4 pr-10 py-2" placeholder="<?php _e('Поиск', 'tarakan'); ?>" />
+          <input type="text" value="<?php echo get_search_query() ?>" name="s" id="s" class="w-full bg-custom-darkblue border-2 border-custom-lightwhite text-custom-lightwhite rounded-full px-4 pr-10 py-2" placeholder="<?php _e('Поиск', 'web-g'); ?>" />
           <input type="hidden" name="post_type" value="places" />
           <input type="submit" class="search-submit hidden" value="<?php echo esc_attr_x( 'Найти', 'submit button' ) ?>" />
         </form>
       </div>
       <div class="welcome-posts flex flex-wrap px-2">
-        <?php 
-          $top_post = new WP_Query( array( 
-            'post_type' => 'post', 
-            'posts_per_page' => 5,
-            'meta_query' => array(
-              array(
-                'key' => '_crb_post_mainhide',
-                'value' => 'yes',
-                'compare' => '!='
-              ),
-            ),
-            'tax_query' => array(
-              array(
-                'taxonomy' => 'category',
-                'field'    => 'term_id',
-                'terms'    => array( 52, 50 ),
-                'operator' => 'NOT IN',
-              )
-            ),
-          ) );
-          if ($top_post->have_posts()) : while ($top_post->have_posts()) : $top_post->the_post(); 
-        ?>
+        <?php $top_posts = crb_get_i18n_theme_option('crb_top_posts'); ?>
+        <?php foreach (array_slice($top_posts, 0,5) as $top_post): ?>
+          <?php $top_post_id = $top_post['id'];  ?>
           <div class="w-1/2 lg:w-1/5 last-of-type:hidden lg:last-of-type:block px-2 py-4">
             <div class="h-full relative bg-custom-darkblue rounded-b-lg">
-              <a href="<?php the_permalink(); ?>" class="w-full h-full absolute top-0 left-0 z-1"></a>
+              <a href="<?php echo get_the_permalink($top_post_id); ?>" class="w-full h-full absolute top-0 left-0 z-1"></a>
               <div class="relative">
                 <?php 
-                  $medium_thumb = get_the_post_thumbnail_url(get_the_ID(), 'medium');
-                  $large_thumb = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                  $medium_thumb = get_the_post_thumbnail_url($top_post_id, 'medium');
+                  $large_thumb = get_the_post_thumbnail_url($top_post_id, 'large');
                 ?>
-                <img class="w-full h-[125px] object-cover rounded-t-lg" alt="<?php the_title(); ?>" src="<?php echo $medium_thumb; ?>" srcset="<?php echo $medium_thumb; ?> 1024w, <?php echo $large_thumb; ?> 1536w" loading="lazy" data-src="<?php echo $medium_thumb; ?>" data-srcset="<?php echo $medium_thumb; ?> 1024w, <?php echo $large_thumb; ?> 1536w">
+                <img class="w-full h-[125px] object-cover rounded-t-lg" alt="<?php echo get_the_title($top_post_id); ?>" src="<?php echo $medium_thumb; ?>" srcset="<?php echo $medium_thumb; ?> 1024w, <?php echo $large_thumb; ?> 1536w" loading="lazy" data-src="<?php echo $medium_thumb; ?>" data-srcset="<?php echo $medium_thumb; ?> 1024w, <?php echo $large_thumb; ?> 1536w">
                 <div class="absolute bottom-0 left-0">
                   <div class="bg-custom-red px-2 py-1">
                     <?php
-                    $post_categories = get_the_terms( $top_post->ID, 'category' );
+                    $post_categories = get_the_terms( $top_post_id, 'category' );
                     foreach (array_slice($post_categories,0,1) as $post_category){ ?>
                       <div class="uppercase text-white text-xs lg:text-sm font-bold"><?php echo $post_category->name; ?></div>
                     <?php } ?>
@@ -57,11 +38,11 @@
                 </div>
               </div>
               <div class="p-4">
-                <div class="text-base lg:text-lg text-white"><?php the_title(); ?></div>
+                <div class="text-base lg:text-lg text-white"><?php echo get_the_title($top_post_id); ?></div>
               </div>
             </div>
           </div>
-        <?php endwhile; endif; wp_reset_postdata(); ?>
+        <?php endforeach; ?>
       </div>
     </div>
   </div>
