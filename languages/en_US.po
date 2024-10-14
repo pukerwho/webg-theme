@@ -1,0 +1,264 @@
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
+
+msgid "Вопросы и ответы"
+msgstr "Questions and answers"
+
+msgid "Популярные вопросы"
+msgstr "Popular questions"
+
+msgid "Новые вопросы"
+msgstr "New questions"
+
+msgid "Привет, меня зовут"
+msgstr "Hello my Name Is"
+
+msgid "Все публикации"
+msgstr "All publications"
+
+msgid ""
+"Ресурс WEB Головоломки создан для того, чтобы делиться накопленным опытом и "
+"знаниями. Мы надеемся, что наши статьи будут полезны новичкам - тем, которые "
+"только решили вникнуть в мир web-разработки."
+msgstr ""
+"The WEB Golovolomki resource was created to share accumulated experience "
+"and knowledge. We hope that our articles will be useful to beginners - those who"
+"just decided to enter the world of web development."
+
+msgid "На сайте вы найдете публикации по разным направлениям и темам"
+msgstr "On the site you will find publications from various directions and topics"
+
+msgid "Навигация"
+msgstr "Navigation"
+
+msgid "Все про создание и продвижение сайтов"
+msgstr "Everything about creating and promoting websites"
+
+msgid ""
+"На данном ресурсе собраны полезные материалы для вебмастеров и seo-"
+"специалистов. WEB Головоломки - это сообщество людей, которые готовы помочь "
+"другим в решении задач по сайтам."
+msgstr ""
+"This resource contains useful materials for webmasters and seo specialists. "
+"WEB Golovolomki is a community of people who are ready to help others in solving "
+"tasks on sites."
+
+msgid "Новое видео на YouTube канале"
+msgstr "New video on YouTube channel"
+
+msgid "Подписаться на канал"
+msgstr "Subscribe to the channel"
+
+msgid "Новые записи"
+msgstr "New posts"
+
+msgid ""
+"Публикации, написанные участниками сообщества. Главная цель - поделиться "
+"знаниями в той или иной области."
+msgstr ""
+"Publications written by community members. The main goal is to share "
+"knowledge in a given area."
+
+msgid "Все записи"
+msgstr "All posts"
+
+msgid "Помогииите!!!"
+msgstr "Heeeeelp!!!"
+
+msgid "Задавай вопрос, получай ответ!"
+msgstr "Ask a question, get an answer!"
+
+msgid "Все вопросы"
+msgstr "All questions"
+
+msgid "Поиск"
+msgstr "Search"
+
+msgid "Вопрос задан"
+msgstr "Question asked"
+
+msgid "Ответов"
+msgstr "Answers"
+
+msgid "Просмотров"
+msgstr "Views"
+
+msgid "Ответы"
+msgstr "Answers"
+
+msgid "Главная"
+msgstr "Home"
+
+msgid "Обновлено"
+msgstr "Updated"
+
+msgid "Комментариев"
+msgstr "Comments"
+
+msgid "Статья была полезной?"
+msgstr "Was the article helpful?"
+
+msgid "Да"
+msgstr "Yes"
+
+msgid "Нет"
+msgstr "Not"
+
+msgid "Рекомендуем к прочтению"
+msgstr "Recommended reading"
+
+msgid "Комментарии"
+msgstr "Comments"
+
+msgid "Заполните форму"
+msgstr "Send the form"
+
+msgid "Заголовок. В чем заключается ваш вопрос."
+msgstr "Title. What is your question."
+
+msgid "Основная часть. Напишите всю информацию, чтобы получить точный ответ."
+msgstr ""
+"Main part. Write all the information to get an accurate answer."
+
+msgid "Задать вопрос"
+msgstr "Ask a question"
+
+msgid "Мы получили ваш вопрос. Сейчас он на проверке у модератора."
+msgstr "We have received your question. Now he is being checked by a moderator."
+
+msgid "Где учиться"
+msgstr "Where to study"
+
+msgid "Рекомендуемые курсы"
+msgstr "Recommended courses"
+
+msgid "Проверка знаний"
+msgstr "Check of knowledge"
+
+msgid "Хорошо ли вы знаете CSS?"
+msgstr "How well do you know CSS?"
+
+msgid "Подписывайся и не пропускай"
+msgstr "Subscribe and don't miss"
+
+msgid "Актуальные новости"
+msgstr "Actual news"
+
+msgid "Интересные задачки"
+msgstr "Interesting puzzles"
+
+msgid "Полезные подборки"
+msgstr "Useful links"
+
+msgid "Перейти в Telegram"
+msgstr "Go to Telegram"
+
+msgid "записей"
+msgstr "posts"
+
+msgid "Полезно"
+msgstr "Useful"
+
+msgid "Читать дальше"
+msgstr "Read more"
+
+msgid "Решено"
+msgstr "Solved"
+
+msgid "Наши авторы"
+msgstr "Our authors"
+
+msgid "Публикаций"
+msgstr "Posts"
+
+msgid "Вступай в клуб"
+msgstr "Join the club"
+
+msgid "Присоединяйся к сообществу!"
+msgstr "Join the community!"
+
+msgid "Перейти на Patreon"
+msgstr "Go to Patreon"
+
+msgid "Наш рейтинг"
+msgstr "Our rating"
+
+msgid "Лучший хостинг для сайта"
+msgstr "The best website hosting"
+
+msgid "Цвет 2024 года"
+msgstr "Color of 2024"
+
+msgid "Как вас зовут?"
+msgstr "What is your name?"
+
+msgid "Ваш комментарий"
+msgstr "Your comment"
+
+msgid "Какое значение установлено по умолчанию для opacity?"
+msgstr "What is the default value for opacity?"
+
+msgid "Какого псевдоэлемента не существует в CSS?"
+msgstr "Which pseudo-element does not exist in CSS?"
+
+msgid "Как правильно объявить переменную в CSS?"
+msgstr "How to properly declare a variable in CSS?"
+
+msgid "Только с помощью препроцессоров"
+msgstr "Only with preprocessors"
+
+msgid "Если у элемента значение position установлено как static, сработает ли для него z-index?"
+msgstr "If an element has its position value set to static, will z-index work for it?"
+
+msgid "С помощью какого тега можно сделать нумерованный список?"
+msgstr "What tag can be used to make a numbered list?"
+
+msgid "Какой псевдокласс сработает при установке курсора в текстовом поле (input)?"
+msgstr "What pseudo-class will work when placing the cursor in a text field (input)?"
+
+msgid "Какой из перечисленных ниже селекторов имеет самый высокий приоритет?"
+msgstr "Which of the following selectors has the highest precedence?"
+
+msgid "Как сделать так, чтобы каждое слово в тексте начиналось с прописной буквы?"
+msgstr "How to make every word in text start with an uppercase letter?"
+
+msgid "Это невозможно в CSS"
+msgstr "It's not possible in CSS"
+
+msgid "Какова ширина HTML-элемента div без содержания? (<div></div>)"
+msgstr "What is the width of an HTML div element with no content? (<div></div>)"
+
+msgid "CSS-свойство background-image может содержать несколько изображений."
+msgstr "The background-image CSS property can contain multiple images."
+
+msgid "Результаты"
+msgstr "Results"
+
+msgid "Правильных ответов"
+msgstr "Correct answers"
+
+msgid "Исследовательский институт Pantone выбрал главный цвет 2024 года. Им стал нежный бархатистый персиковый оттенок, получивший название Peach Fuzz (Персиковый пух)."
+msgstr "The Pantone Research Institute has chosen the main color of 2024. It became a delicate velvety peach shade, called Peach Fuzz."
+
+msgid "Где купить ссылки на сайт?"
+msgstr "Where to buy links to the site?"
+
+msgid "Лучшие биржи ссылок"
+msgstr "Best Link Exchanges"
+
+msgid "Что читают?"
+msgstr "What are they reading?"
+
+msgid "Популярные записи"
+msgstr "Popular posts"
+
+msgid "Наш выбор"
+msgstr "Our choice"
