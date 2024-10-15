@@ -18,8 +18,8 @@ function crb_attach_theme_options() {
     Field::make( 'footer_scripts', 'crb_footer_scripts', 'Скрипты в футере' )
   ))->add_tab( __('Загальні'), array(
     Field::make( 'text', 'crb_footer_links_numbers', 'Кількість посилань' ),
-    Field::make( 'text', 'crb_top_post_id', 'Популярні статті - ID' ),
-    Field::make( 'text', 'crb_top_post_id_bottom', 'Популярні статті - ID - Bottom' ),
+    Field::make( 'text', 'crb_top_post_id'. crb_get_i18n_suffix(), 'Популярні статті - ID' ),
+    Field::make( 'text', 'crb_top_post_id_bottom'. crb_get_i18n_suffix(), 'Популярні статті - ID - Bottom' ),
   ));
   
 }

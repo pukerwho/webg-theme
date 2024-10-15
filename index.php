@@ -16,7 +16,7 @@
       </div>
       <div class="welcome-posts flex flex-wrap px-2">
         <?php 
-        $top_posts = carbon_get_theme_option('crb_top_post_id'); 
+        $top_posts = crb_get_i18n_theme_option('crb_top_post_id'); 
         $top_posts_id = explode(",", $top_posts);
         foreach (array_slice($top_posts_id, 0,5) as $top_post_id):
         ?>
@@ -59,7 +59,7 @@
         </div>
         <div class="w-full lg:w-3/4">
           <?php 
-          $top_posts_bottom = carbon_get_theme_option('crb_top_post_id_bottom'); 
+          $top_posts_bottom = crb_get_i18n_theme_option('crb_top_post_id_bottom'); 
           $top_posts_bottom_id = explode(",", $top_posts_bottom);
           foreach (array_slice($top_posts_bottom_id, 0,3) as $top_post_bottom_id):
           ?>
