@@ -3,23 +3,14 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options', 1 );
 function crb_attach_theme_options() {
-  Container::make( 'theme_options', __('Штаб') )
-  ->add_tab( __('YouTube'), array(
-    Field::make( 'image', 'crb_youtube_new_cover', 'Обложка для ютуба' ),
-    Field::make( 'text', 'crb_youtube_new_link', 'Ссылка на новое видео' ),
-  ))
+  Container::make( 'theme_options', __('Treba Settings') )
   ->add_tab( __('Cайдбар'), array(
-    Field::make( 'complex', 'crb_best_hosters', 'Рейтинг хостеров' )->set_layout( 'tabbed-vertical' )->add_fields( array(
+    Field::make( 'complex', 'crb_best_hosters', 'Рейтинг хостеров' )->add_fields( array(
       Field::make( 'text', 'crb_best_hoster_name', 'Название хостера' ),
       Field::make( 'text', 'crb_best_hoster_link', 'Ссылка на хостера' ),
       Field::make( 'text', 'crb_best_hoster_rating', 'Рейтинг хостера' ),
-    )),
-    Field::make( 'complex', 'crb_best_courses', 'Лучшие курсы' )->set_layout( 'tabbed-vertical' )->add_fields( array(
-      Field::make( 'text', 'crb_best_course_name', 'Название курса' ),
-      Field::make( 'text', 'crb_best_course_link_ua', 'Ссылка на UA' ),
-      Field::make( 'text', 'crb_best_course_link_ru', 'Ссылка на RU' ),
     )),
   ))
   ->add_tab( __('Скрипты'), array(
@@ -27,13 +18,8 @@ function crb_attach_theme_options() {
     Field::make( 'footer_scripts', 'crb_footer_scripts', 'Скрипты в футере' )
   ))->add_tab( __('Загальні'), array(
     Field::make( 'text', 'crb_footer_links_numbers', 'Кількість посилань' ),
-    Field::make( 'association', 'crb_top_posts' , 'Топ посилання')
-      ->set_types( array(
-        array(
-          'type'      => 'post',
-          'post_type' => 'post',
-        )
-      ) )
+    Field::make( 'text', 'crb_top_post_id', 'Популярні статті - ID' ),
+    Field::make( 'text', 'crb_top_post_id_bottom', 'Популярні статті - ID - Bottom' ),
   ));
   
 }

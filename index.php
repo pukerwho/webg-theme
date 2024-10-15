@@ -15,9 +15,11 @@
         </form>
       </div>
       <div class="welcome-posts flex flex-wrap px-2">
-        <?php $top_posts = crb_get_i18n_theme_option('crb_top_posts'); ?>
-        <?php foreach (array_slice($top_posts, 0,5) as $top_post): ?>
-          <?php $top_post_id = $top_post['id'];  ?>
+        <?php 
+        $top_posts = carbon_get_theme_option('crb_top_post_id'); 
+        $top_posts_id = explode(",", $top_posts);
+        foreach (array_slice($top_posts_id, 0,5) as $top_post_id):
+        ?>
           <div class="w-1/2 lg:w-1/5 last-of-type:hidden lg:last-of-type:block px-2 py-4">
             <div class="h-full relative bg-custom-darkblue rounded-b-lg">
               <a href="<?php echo get_the_permalink($top_post_id); ?>" class="w-full h-full absolute top-0 left-0 z-1"></a>
@@ -57,35 +59,18 @@
         </div>
         <div class="w-full lg:w-3/4">
           <?php 
-            $top_post = new WP_Query( array( 
-              'post_type' => 'post', 
-              'posts_per_page' => 3,
-              'meta_query' => array(
-                array(
-                  'key' => '_crb_post_mainhide',
-                  'value' => 'yes',
-                  'compare' => '!='
-                ),
-              ),
-              'tax_query' => array(
-                array(
-                  'taxonomy' => 'category',
-                  'field'    => 'term_id',
-                  'terms'    => array( 52, 50 ),
-                  'operator' => 'NOT IN',
-                )
-              ),
-            ) );
-            if ($top_post->have_posts()) : while ($top_post->have_posts()) : $top_post->the_post(); 
+          $top_posts_bottom = carbon_get_theme_option('crb_top_post_id_bottom'); 
+          $top_posts_bottom_id = explode(",", $top_posts_bottom);
+          foreach (array_slice($top_posts_bottom_id, 0,3) as $top_post_bottom_id):
           ?>
           <?php 
-            $currentId = get_the_ID();
+            $currentId = $top_post_bottom_id;
             $countNumber = tutCount($currentId);
           ?>
           <div class="w-full border-b border-gray-600 last-of-type:border-none border-dashed pb-2 mb-2 last-of-type:mb-0 last-of-type:pb-0 ">
             <div class="text-sm text-custom-lightwhite mb-1"><?php _e("Просмотров", "web-g"); ?>: <?php echo $countNumber; ?></div>
             <div class="flex flex-wrap flex-col lg:flex-row lg:justify-between lg:items-center">
-              <div class="text-white mb-2 lg:mb-0 mr-0 lg:mr-2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+              <div class="text-white mb-2 lg:mb-0 mr-0 lg:mr-2"><a href="<?php echo get_the_permalink($currentId); ?>"><?php echo get_the_title($currentId); ?></a></div>
               <div class="flex items-center">
                 <div class="mr-2">👍</div> 
                 <div class="text-gray-200">
@@ -94,7 +79,7 @@
               </div>
             </div>
           </div>
-          <?php endwhile; endif; wp_reset_postdata(); ?>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
