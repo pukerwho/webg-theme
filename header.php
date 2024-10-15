@@ -66,7 +66,7 @@ if ( is_singular() ) {
             'menu_class' => 'header_bottom text-custom-lightwhite hidden lg:flex'
           ]); ?> 
           <div class="hidden lg:block ml-6">
-            <a href="/contacts" class="bg-custom-yellow rounded uppercase text-center font-bold text-sm px-4 py-2"><?php _e("Контакты", "web-g"); ?></a>
+            <a href="<?php echo crb_get_i18n_theme_option('crb_contact_link'); ?>" class="bg-custom-yellow rounded uppercase text-center font-bold text-sm px-4 py-2"><?php _e("Контакты", "web-g"); ?></a>
           </div>
           <!-- Гамбургер -->
           <div class="mobile-menu-open w-7 h-6 relative flex flex-col justify-center lg:hidden mt-1">
@@ -87,7 +87,7 @@ if ( is_singular() ) {
         <div class="mobile-menu-close"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg></div>
       </div>
       <div class="border-b border-gray-300 pb-4 mb-4">
-        <a href="/contacts" class="block bg-custom-yellow rounded uppercase text-center font-bold text-sm px-4 py-2"><?php _e("Контакты", "web-g"); ?></a>
+        <a href="<?php echo crb_get_i18n_theme_option('crb_contact_link'); ?>" class="block bg-custom-yellow rounded uppercase text-center font-bold text-sm px-4 py-2"><?php _e("Контакты", "web-g"); ?></a>
       </div>
       <div class="font-bold uppercase mb-4"><?php _e("Меню", "web-g"); ?></div>
 			<?php wp_nav_menu([

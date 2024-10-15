@@ -20,6 +20,7 @@ function crb_attach_theme_options() {
     Field::make( 'text', 'crb_footer_links_numbers', 'Кількість посилань' ),
     Field::make( 'text', 'crb_top_post_id'. crb_get_i18n_suffix(), 'Популярні статті - ID' ),
     Field::make( 'text', 'crb_top_post_id_bottom'. crb_get_i18n_suffix(), 'Популярні статті - ID - Bottom' ),
+    Field::make( 'text', 'crb_contact_link'. crb_get_i18n_suffix(), 'Посилання на Контакти' ),
   ));
   
 }
