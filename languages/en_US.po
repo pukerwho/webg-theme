@@ -262,3 +262,42 @@ msgstr "Popular posts"
 
 msgid "Наш выбор"
 msgstr "Our choice"
+
+msgid "Контакты"
+msgstr "Contacts"
+
+msgid "Полезные"
+msgstr "Useful"
+
+msgid "советы"
+msgstr "advice"
+
+msgid "на каждый день"
+msgstr "for every day"
+
+msgid "Выбор читателей"
+msgstr "Readers' Choice"
+
+msgid "Популярные категории"
+msgstr "Popular categories"
+
+msgid "Рекомендуем"
+msgstr "We recommend"
+
+msgid "Люди ищут"
+msgstr "People are looking"
+
+msgid "Ресурс WEB Головоломки создан для того, чтобы делиться накопленным опытом и знаниями."
+msgstr "The WEB Golovolomki (Puzzle) resource was created to share acquired experience and knowledge."
+
+msgid "Напишите нам"
+msgstr "Write to us"
+
+msgid "Мы в соцсетях"
+msgstr "We are on social networks"
+
+msgid "Партнеры"
+msgstr "Partners"
+
+msgid "Содержание"
+msgstr "Content"

@@ -86,7 +86,7 @@
   </div>
   <div class="category-list border-t-8 border-custom-red mb-16">
     <div class="container">
-      <div class="inline-block bg-custom-red uppercase text-white font-black px-4 py-2 mb-6"><?php _e("Популярные категории", "treba-wp"); ?></div>
+      <div class="inline-block bg-custom-red uppercase text-white font-black px-4 py-2 mb-6"><?php _e("Популярные категории", "web-g"); ?></div>
       <div class="flex flex-wrap -mx-2">
         <?php $home_categories = get_terms( array( 
           'taxonomy' => 'category', 
