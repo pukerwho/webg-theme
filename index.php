@@ -100,6 +100,7 @@
             )
           )
         ));
+        shuffle($home_categories);
         foreach ( array_slice($home_categories, 0, 6) as $home_category ): ?>
         <div class="w-1/2 lg:w-1/6 px-2">
           <div class="relative">

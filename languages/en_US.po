@@ -164,6 +164,9 @@ msgstr "Go to Telegram"
 msgid "записей"
 msgstr "posts"
 
+msgid "Записей"
+msgstr "Posts"
+
 msgid "Полезно"
 msgstr "Useful"
 

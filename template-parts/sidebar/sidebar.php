@@ -5,10 +5,24 @@
       'taxonomy' => 'category', 
       'parent' => 0, 
       'hide_empty' => false,
+      'meta_query' => array(
+        array(
+          'key'       => '_crb_category_home_show',
+          'value'     => 'yes',
+          'compare'   => '='
+        )
+      )
     ));
+    shuffle($all_categories);
     foreach ( $all_categories as $all_category ): ?>
-    <div class="border-b-2 border-dotted border-gray-200 pb-2 mb-2 last-of-type:mb-0 last-of-type:pb-0 last-of-type:border-transparent">
-      <a href="<?php echo get_term_link($all_category); ?>" class="text-gray-600 hover:text-custom-red font-light px-4"><?php echo $all_category->name ?></a>
+    <div class="flex flex-wrap items-center border-b-2 border-dotted border-gray-200 pb-2 mb-2 last-of-type:mb-0 last-of-type:pb-0 last-of-type:border-transparent">
+      <div class="mr-2">
+        <img src="<?php echo carbon_get_term_meta($all_category->term_id, 'crb_category_img' ); ?>" alt="<?php echo $all_category->name ?>" loading="lazy" class="w-[55px] h-[55px] min-w-[55px] min-h-[55px] object-cover">
+      </div>
+      <div>
+        <div class=""><a href="<?php echo get_term_link($all_category); ?>"><?php echo $all_category->name ?></a></div>
+        <div class="text-sm text-gray-600"><?php _e("Записей", "web-g"); ?>: <?php echo $all_category->count; ?></div>
+      </div>
     </div>
     <?php endforeach; ?>
   </div>
