@@ -304,3 +304,12 @@ msgstr "Partners"
 
 msgid "Содержание"
 msgstr "Content"
+
+msgid "Все категории"
+msgstr "All categories"
+
+msgid "Меню"
+msgstr "Menu"
+
+msgid "Головоломки"
+msgstr "Puzzles"

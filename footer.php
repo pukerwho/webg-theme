@@ -2,7 +2,7 @@
   <div class="container">
     <div class="flex flex-wrap lg:-mx-4">
       <div class="w-full lg:w-1/3 lg:px-4 mb-6 lg:mb-0">
-        <div class="mb-4"><a href="<?php echo home_url(); ?>" class="text-2xl text-custom-lightwhite font-extrabold"><span class="text-custom-yellow">WEB</span> Головоломки</a></div>
+        <div class="mb-4"><a href="<?php echo home_url(); ?>" class="text-2xl text-custom-lightwhite font-extrabold"><span class="text-custom-yellow">WEB</span> <?php _e("Головоломки", "web-g"); ?></a></div>
         <div class="text-white mb-6">
           <?php _e("Ресурс WEB Головоломки создан для того, чтобы делиться накопленным опытом и знаниями.", "web-g"); ?>
         </div>

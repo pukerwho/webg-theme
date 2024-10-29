@@ -83,7 +83,7 @@ if ( is_singular() ) {
 	<div class="mobile-menu hidden h-full w-full fixed left-0 top-0">
 		<div class="bg-white px-2 py-4">
       <div class="flex justify-between items-center mb-6">
-        <div><a href="<?php echo home_url(); ?>" class="text-2xl font-extrabold"><span class="text-custom-yellow">WEB</span> Головоломки</a></div>
+        <div><a href="<?php echo home_url(); ?>" class="text-2xl font-extrabold"><span class="text-custom-yellow">WEB</span> <?php _e("Головоломки", "web-g"); ?></a></div>
         <div class="mobile-menu-close"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg></div>
       </div>
       <div class="border-b border-gray-300 pb-4 mb-4">
