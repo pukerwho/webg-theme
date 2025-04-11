@@ -6,6 +6,11 @@ use Carbon_Fields\Field;
 add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options', 1 );
 function crb_attach_theme_options() {
   Container::make( 'theme_options', __('Treba Settings') )
+  ->add_tab( __('SEO'), array(
+    Field::make( 'html', 'crb_seo_mainpage', __( 'SEO Mainpage' ) )->set_html( sprintf( '<b>ℹ️ Main page</b>' ) ),
+    Field::make( 'text', 'crb_seo_mainpage_title' . crb_get_i18n_suffix(), 'Головна сторінка - Title' ),
+    Field::make( 'text', 'crb_seo_mainpage_description' . crb_get_i18n_suffix(), 'Головна сторінка - Description' ),
+  ))
   ->add_tab( __('Cайдбар'), array(
     Field::make( 'complex', 'crb_best_hosters', 'Рейтинг хостеров' )->add_fields( array(
       Field::make( 'text', 'crb_best_hoster_name', 'Название хостера' ),

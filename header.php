@@ -1,5 +1,6 @@
 <?php
 
+
 $current_title = wp_get_document_title();
 if ( is_singular() ) {
 	//Название заведения
@@ -57,7 +58,7 @@ if ( is_singular() ) {
     <div class="container py-4">
       <div class="flex justify-between flex-wrap items-center lg:-mx-4">
         <div class="lg:px-4">
-          <a href="<?php echo home_url(); ?>" class="text-2xl text-custom-lightwhite font-extrabold"><span class="text-custom-yellow">WEB</span> Головоломки</a>
+          <a href="<?php echo home_url(); ?>" class="text-2xl text-custom-lightwhite font-extrabold"><span class="text-custom-yellow">WEB</span> <?php _e("Головоломки", "web-g"); ?></a>
         </div>
         <div class="flex items-center lg:px-4">
           <?php wp_nav_menu([
